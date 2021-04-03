@@ -1,9 +1,14 @@
 import Para from './Para'
+import Button from './Button';
 
 const Main = () => {
     return (
         <main className="main">
-            <Para text="Asdfdf sdgdffd"/>
+            <Para />
+            <Button text="Save" color="green" />
+            <Para />
+            <Button />
+            <Para text="Nännännäää" />
         </main>
     )
 }

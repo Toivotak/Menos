@@ -15,6 +15,7 @@ body {
 }
 
 .btn {
+    height: 40px;
     display: inline-block;
     font-size: 20px;
     border: none;
@@ -66,11 +67,10 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 .main > .btn {
-    max-height: 40px;
     grid-column-start: 4;
     grid-column-end: 4;
     position: relative;
-    top: 40%
+    top: calc(50% - 25px);
 }
 
 .form-collumn-1 {
@@ -88,5 +88,6 @@ a:focus, button:focus, input:focus, textarea:focus {
 .form-collumn-4 {
     grid-column-start: 4;
     display: flex;
+    justify-content: center;
     align-items: center;
 }

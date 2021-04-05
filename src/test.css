@@ -1,6 +1,11 @@
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: rgb(191, 246, 246);
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 0, 0);
 }
 
 .container {
@@ -12,23 +17,21 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .btn {
     height: 40px;
     display: inline-block;
+    color: silver;
     font-size: 20px;
-    border: none;
+    border: 0.5px solid silver;
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transform: rotate(-360deg);
     transition: 1000ms;
-}
-
-.btn:focus {
-    outline: none;
 }
   
 .btn:active {

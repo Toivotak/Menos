@@ -3,13 +3,17 @@ import Button from './Button';
 import Form from './Form';
 
 const Main = () => {
+    const onClick = (ev) => {
+        console.log("clikkatu ", ev);
+    }
+
     return (
         <main className="main">
-            <Para />
-            <Button text="Save" color="green" />
+            <Para onClick={onClick} />
+            <Button text="Save" color="green" onClick={onClick}/>
             <Form type="country"/>
             <Form />
-            <Button />
+            <Button onClick={onClick}/>
             <Para text="Nännännäää" />
         </main>
     )

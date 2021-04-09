@@ -14,7 +14,7 @@ const Form = ({type}) => {
                 <div className="form-collumn-2"></div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
-                    <Button />
+                    <Button onClick=""/>
                 </div>
             </form> 
         )

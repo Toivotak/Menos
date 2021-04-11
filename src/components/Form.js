@@ -2,9 +2,18 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 
 const Form = ({type}) => {
-    if (type == "person"){
+    const formSubmitted = (event) => {
+        event.preventDefault();
+        console.log(event);
+    }
+
+    const onClick = () => {
+        console.log("click form" ); 
+    }
+
+    if (type === "person"){
         return (
-            <form className="form">
+            <form className="form" onSubmit={formSubmitted}>
                 <div className="form-collumn-1">
                     <label htmlFor="fname">First name:</label><br />
                     <input type="text" id="fname" name="fname" className="form-input-text" /><br />
@@ -14,14 +23,14 @@ const Form = ({type}) => {
                 <div className="form-collumn-2"></div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
-                    <Button onClick=""/>
+                    <Button type="submit" color="green" text="Save" onClick={onClick} />
                 </div>
             </form> 
         )
     }
-    if (type == "country"){
+    if (type === "country"){
         return (
-            <form className="form">
+            <form className="form" onSubmit={formSubmitted}>
                 <div className="form-collumn-1">
                     <label htmlFor="cname">Counry name:</label><br />
                     <input type="text" id="cname" name="cname" className="form-input-text" /><br />
@@ -36,7 +45,8 @@ const Form = ({type}) => {
                 </div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
-                    <Button />
+                    <Button type="submit" color="green" text="Save" onClick={onClick} />
+                    <Button type="submit" color="red" text="Cancel" onClick={onClick} />
                 </div>
             </form> 
         )

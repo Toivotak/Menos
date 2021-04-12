@@ -4,7 +4,7 @@ import Button from './Button'
 const Form = ({type}) => {
     const formSubmitted = (event) => {
         event.preventDefault();
-        console.log(event);
+        console.log("form send");
     }
 
     const onClick = () => {
@@ -20,10 +20,19 @@ const Form = ({type}) => {
                     <label htmlFor="lname">Last name:</label><br />
                     <input type="text" id="lname" name="lname" className="form-input-text" />
                 </div>
-                <div className="form-collumn-2"></div>
+                <div className="form-collumn-2">
+                    <label>Sex:</label><br />
+                    <label htmlFor="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label htmlFor="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label htmlFor="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                </div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
                     <Button type="submit" color="green" text="Save" onClick={onClick} />
+                    <Button type="reset" color="red" text="Cancel" onClick={onClick} />
                 </div>
             </form> 
         )
@@ -46,7 +55,7 @@ const Form = ({type}) => {
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
                     <Button type="submit" color="green" text="Save" onClick={onClick} />
-                    <Button type="submit" color="red" text="Cancel" onClick={onClick} />
+                    <Button type="reset" color="red" text="Cancel" onClick={onClick} />
                 </div>
             </form> 
         )

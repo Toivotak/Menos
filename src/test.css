@@ -90,7 +90,5 @@ a:focus, button:focus, input:focus, textarea:focus {
 
 .form-collumn-4 {
     grid-column-start: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }

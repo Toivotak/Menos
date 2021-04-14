@@ -2,6 +2,10 @@ html {
     font-size: 16px;
 }
 
+:root {
+    --clr-primary-300: rgb(191, 196, 246);
+}
+
 body {
     background-color: rgb(191, 196, 246);
     font-family: Arial, Helvetica, sans-serif;

@@ -27,7 +27,7 @@ const Button = ({type, color, text, onClick}) => {
 
 Button.defaultProps = {
     type: "button",
-    color: "red",
+    color: "#ff5b00",
     text: "Missing",
     onClick: () => (console.log("default onClick"))
 }

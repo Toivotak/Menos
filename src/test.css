@@ -3,13 +3,17 @@ html {
 }
 
 :root {
-    --clr-primary-300: rgb(191, 196, 246);
+    --clr-primary-100: #FCF7FF;
+    --clr-primary-200: #7B7485;
+    --clr-primary-300: #0F00FF;
+    --clr-secondary-100: #FF0000;
+    --clr-secondary-200: #D70000;
 }
 
 body {
-    background-color: rgb(191, 196, 246);
+    background-color: var(--clr-primary-100);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(37, 0, 0);
+    color: #000000;
 }
 
 .container {
@@ -17,6 +21,7 @@ body {
 }
 
 .header {
+    color: var(--clr-secondary-200);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +32,8 @@ body {
 .btn {
     height: 40px;
     display: inline-block;
-    color: rgb(211, 209, 209);
+    color: var(--clr-secondary-200);
     font-size: 15px;
-    border: 0.5px solid silver;
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
@@ -45,7 +49,7 @@ body {
 
 .main {
     display: grid;
-    background-color: rgb(13, 9, 245);
+    background-color: var(--clr-primary-300);
     padding: 20px;
     border-radius: 20px;
 }
@@ -53,7 +57,7 @@ body {
 .main > .para, .main > .form {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: rgb(191, 196, 246);
+    background-color: var(--clr-primary-100);
     padding: 10px;
     border-radius: 20px;
     margin: 10px;

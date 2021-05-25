@@ -1,21 +1,8 @@
+import React from 'react'
+
 import PropTypes from 'prop-types'
-import { useEffect, useState } from 'react'
 
 const Button = ({type, color, text, onClick}) => {
-    /*const [count, setCount] = useState(1);
-
-    if (count % 2 === 0){
-        color = "orange";
-    }
-
-    function f(){
-        setCount(count + 1); 
-        onClick();
-    }
-    useEffect(() => {
-        //document.title += `${count}`;
-    });*/
-
     return <button 
         type={type}
         onClick={onClick}

@@ -3,15 +3,15 @@ html {
 }
 
 :root {
-    --clr-primary-100: #f0f98d;
-    --clr-primary-200: #ecf96a;
-    --clr-primary-300: #e7f83f;
-    --clr-secondary-100: #ff5b00;
-    --clr-secondary-200: #ff0000;
+    --clr-primary-100: #e8e3f3;
+    --clr-primary-200: #c9c7c7;
+    --clr-primary-300: #929292;
+    --clr-secondary-100: #f00f0f;
+    --clr-secondary-200: #e20808;
 }
 
 body {
-    background-image: radial-gradient(circle, #f0f98d, #eef97c, #ecf96a, #e9f856, #e7f83f, #edea2d, #f1dc19, #f5cd00, #fbac00, #ff8700, #ff5b00, #ff0000);
+    background-color: var(--clr-primary-100);
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
 }
@@ -21,7 +21,8 @@ body {
 }
 
 .header {
-    color: var(--clr-secondary-200);
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-primary-200);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,17 +51,17 @@ body {
 
 .main {
     display: grid;
-    background-color: var(--clr-primary-300);
-    padding: 20px;
+    background-color: var(--clr-secondary-100);
+    padding: 10px;
     border-radius: 20px;
 }
 
 .main > .para, .main > .form {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: var(--clr-primary-100);
+    background-color: var(--clr-primary-300);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
 }
 

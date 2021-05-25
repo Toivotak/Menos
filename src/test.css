@@ -4,7 +4,7 @@ html {
 
 :root {
     --clr-primary-100: #e8e3f3;
-    --clr-primary-200: #c9c7c7;
+    --clr-primary-200: #dbdada;
     --clr-primary-300: #929292;
     --clr-secondary-100: #f00f0f;
     --clr-secondary-200: #e20808;
@@ -22,12 +22,27 @@ body {
 
 .header {
     background-color: var(--clr-secondary-200);
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-100);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     font-size: 2rem;
+    border-radius: 20px;
+}
+
+.moon-right {
+    padding: 75px;
+    border-right: 20px solid var(--clr-primary-100);
+    border-radius: 100px;
+    margin-left: 50px;
+}
+
+.moon-left {
+    padding: 75px;
+    border-left: 20px solid var(--clr-primary-100);
+    border-radius: 100px;
+    margin-right: 50px;
 }
 
 .btn {
@@ -93,12 +108,19 @@ a:focus, button:focus, input:focus, textarea:focus {
     background-color: var(--clr-secondary-200);
     color: var(--clr-primary-100);
 }
+
+label {
+    font-size: 1.05rem;
+}
+
 .form-collumn-1 {
     grid-column-start: 1;
+    
 }
 
 .form-collumn-2 {
     grid-column-start: 2;
+
 }
 
 .form-collumn-3 {

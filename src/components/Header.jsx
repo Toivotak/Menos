@@ -4,7 +4,9 @@ const Header = ({ title }) => {
 
     return (
         <header className="header">
+            <div className="moon-left" />
             <h1>{title}</h1>
+            <div className="moon-right" />
         </header>
     )
 }

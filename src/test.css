@@ -35,7 +35,8 @@ body {
     display: inline-block;
     color: var(--clr-secondary-200);
     font-size: 15px;
-    border: none;
+    font-weight: bold;
+    border: 1px solid var(--clr-primary-300);
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -59,7 +60,7 @@ body {
 .main > .para, .main > .form {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: var(--clr-primary-300);
+    background-color: var(--clr-primary-200);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
@@ -84,8 +85,14 @@ a:focus, button:focus, input:focus, textarea:focus {
     grid-column-end: 4;
     position: relative;
     top: calc(50% - 25px);
+    background-color: var(--clr-primary-100);
+    color: var(--clr-secondary-200);
 }
 
+.form-collumn-4 > .btn {
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-primary-100);
+}
 .form-collumn-1 {
     grid-column-start: 1;
 }

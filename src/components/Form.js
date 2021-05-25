@@ -31,8 +31,8 @@ const Form = ({type}) => {
                 </div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
-                    <Button type="submit" color="green" text="Save" onClick={onClick} />
-                    <Button type="reset" color="red" text="Cancel" onClick={onClick} />
+                    <Button type="submit" text="Save" onClick={onClick} />
+                    <Button type="reset" text="Cancel" onClick={onClick} />
                 </div>
             </form> 
         )
@@ -54,8 +54,8 @@ const Form = ({type}) => {
                 </div>
                 <div className="form-collumn-3"></div>
                 <div className="form-collumn-4">
-                    <Button type="submit" color="green" text="Save" onClick={onClick} />
-                    <Button type="reset" color="red" text="Cancel" onClick={onClick} />
+                    <Button type="submit" text="Save" onClick={onClick} />
+                    <Button type="reset" text="Cancel" onClick={onClick} />
                 </div>
             </form> 
         )

@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <main className="main">
             <Para onClick={onClick} />
-            <Button text="Save" color="green" onClick={onClick}/>
+            <Button text="Save" onClick={onClick}/>
             <Form type="country"/>
             <Form />
             <Button onClick={onClick}/>

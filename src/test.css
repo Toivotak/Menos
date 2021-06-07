@@ -30,7 +30,110 @@ body {
     font-size: 2rem;
     border-radius: 20px;
 }
-/* Shapes */
+.btn {
+    height: 40px;
+    display: inline-block;
+    color: var(--clr-secondary-200);
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid var(--clr-primary-300);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transform: rotate(-360deg);
+    transition: 1000ms;
+}
+  
+.btn:active {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
+
+.main {
+    display: grid;
+    background-color: var(--clr-secondary-100);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main > .para, .main > .form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--clr-primary-200);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.main > .form {
+    display: grid;
+    grid-template-columns: 28% 28% 28% 16%;
+}
+
+.form-input-text {
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.main > .btn {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    position: relative;
+    top: calc(50% - 25px);
+    background-color: var(--clr-primary-100);
+    color: var(--clr-secondary-200);
+}
+
+.form-collumn-4 > .btn {
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-primary-100);
+}
+
+label {
+    font-size: 1.05rem;
+}
+
+.form-collumn-1 {
+    grid-column-start: 1;
+    
+}
+
+.form-collumn-2 {
+    grid-column-start: 2;
+
+}
+
+.form-collumn-3 {
+    grid-column-start: 3;
+}
+
+.form-collumn-4 {
+    grid-column-start: 4;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    
+    background-color: var(--clr-secondary-100);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.footer > p {
+    background-color: var(--clr-primary-200);
+    padding: 10px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+}
+/* Shapes */ /* DOTO make em spin */
 
 .moon-right {
     padding: 75px;
@@ -128,89 +231,3 @@ body {
     transform: rotate(135deg);
 }
 /*End of shapes*/
-.btn {
-    height: 40px;
-    display: inline-block;
-    color: var(--clr-secondary-200);
-    font-size: 15px;
-    font-weight: bold;
-    border: 1px solid var(--clr-primary-300);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    cursor: pointer;
-    transform: rotate(-360deg);
-    transition: 1000ms;
-}
-  
-.btn:active {
-    transform: rotate(360deg);
-    transition: 500ms;
-}
-
-.main {
-    display: grid;
-    background-color: var(--clr-secondary-100);
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.main > .para, .main > .form {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: var(--clr-primary-200);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.main > .form {
-    display: grid;
-    grid-template-columns: 28% 28% 28% 16%;
-}
-
-.form-input-text {
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a:focus, button:focus, input:focus, textarea:focus {
-    outline: none;
-}
-
-.main > .btn {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    position: relative;
-    top: calc(50% - 25px);
-    background-color: var(--clr-primary-100);
-    color: var(--clr-secondary-200);
-}
-
-.form-collumn-4 > .btn {
-    background-color: var(--clr-secondary-200);
-    color: var(--clr-primary-100);
-}
-
-label {
-    font-size: 1.05rem;
-}
-
-.form-collumn-1 {
-    grid-column-start: 1;
-    
-}
-
-.form-collumn-2 {
-    grid-column-start: 2;
-
-}
-
-.form-collumn-3 {
-    grid-column-start: 3;
-}
-
-.form-collumn-4 {
-    grid-column-start: 4;
-    justify-content: space-evenly;
-}

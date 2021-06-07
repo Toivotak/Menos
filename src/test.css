@@ -133,7 +133,16 @@ label {
     border-radius: 10px;
     white-space: pre-wrap;
 }
-/* Shapes */ /* DOTO make em spin */
+/* Shapes */
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
 
 .moon-right {
     padding: 75px;
@@ -156,6 +165,8 @@ label {
     position: relative;
     left: -100px;
     transform: rotate(10deg);
+    
+    animation: rotation 10s infinite linear;
     }
 
 .star-left:before {
@@ -197,6 +208,8 @@ label {
     position: relative;
     left: 100px;
     transform: rotate(10deg);
+    
+    animation: rotation 10s infinite linear;
     }
 
 .star-right:before {

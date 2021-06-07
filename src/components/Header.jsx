@@ -8,7 +8,7 @@ const Header = ({ title }) => {
             <div className="star-left"><div id="star-inner-left"/></div>
             <h1>{title}</h1>
             <div className="star-right"><div id="star-inner-right"/></div>
-            <div className="moon-right" />
+            <div className="moon-right"/>
         </header>
     )
 }
